@@ -18,6 +18,7 @@ export default function Game(): ReactElement {
   return (<div>
     <Board />
     <button onClick={() => {
+      context?.getBoard();
       const renderGame = () => context?.nextFrame();
       setInterval(renderGame, 1000);
     }}>start game</button>
