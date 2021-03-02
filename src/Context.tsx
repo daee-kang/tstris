@@ -43,6 +43,7 @@ const Provider = ({ children }: { children: React.ReactNode; }) => {
         game.current.moveLeft();
         break;
       case "ArrowUp":
+        game.current.rotate();
         break;
       case "ArrowRight":
         game.current.moveRight();
